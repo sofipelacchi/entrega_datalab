@@ -1,0 +1,386 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: rgb(247,78,0);
+}
+body{
+  min-width: 100%;
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  color: var(--primary-color);
+}
+nav{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  padding-top: 2%;
+  width: 100%;
+  height: 10vh;
+  font-size: 2rem;
+}
+nav>ul{
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  list-style: none;
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+h2{
+  font-size: 5rem;
+}
+h3{
+  font-size: 4rem;
+}
+#proyectos p{
+  padding: 0px 20px;
+  text-align: left;
+  color: #333;
+  font-size: 1.5rem;
+}
+a:active,a:hover{
+  -webkit-text-stroke: 0px;
+  color: var(--primary-color);
+}
+
+/* CLASS UTILS */
+.text-container{
+  font-size: 2rem;
+  text-align: center;
+  color: dimgray;
+}
+.text-orange{
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.text-border {
+  -webkit-text-stroke: 1px var(--primary-color) !important;
+  color: transparent; 
+}
+.opacity{
+  opacity: 0.7;
+}
+.line-height{ 
+  line-height: 10rem;
+}
+.container{
+  margin: 0px auto;
+  max-width: 100%;
+}
+.portada{
+  width: 90%;
+}
+.portada-small{
+  width: 50%;
+  padding-bottom:2%;
+}
+.portada-small-padding-top{
+  padding-top: 20%;
+  width: 50%;
+}
+.juguete-img{
+  display: block;
+  width: 45%;
+}
+.margin-left{
+  margin-left: 35%;
+}
+.col-space{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.padding-bottom{
+  padding-bottom: 10%;
+}
+
+/* SECTION INICIO */
+#inicio{
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#inicio-container{
+  width: 80%;
+}
+#inicio-container>.row>div:last-child{
+  padding-top: 15%;
+}
+#portfolio-word{
+  display: float;
+  margin-left: -70px;
+}
+
+/* SECTION SOBRE MI */
+#sobreMi{
+  max-width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+#sobre-mi-container{
+  width: 80%;
+}
+#sobre-mi-container>div:last-child{
+  padding-top: 5%;
+}
+#sobre-mi-container a:hover{
+  color: black;
+}
+#perfil-img{
+  z-index: 9;
+  max-width: 90%;
+}
+.circle-solid-top{
+  position: absolute;
+  z-index: 10;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+.circle-solid-bot{
+  position: absolute;
+  z-index: 10;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-top: 25%;
+  margin-left: 20%;
+}
+.circle-stroke-top{
+  position: absolute;
+  z-index: -8;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 8px solid var(--primary-color);
+  margin-top: 5%;
+}
+.circle-stroke-bot{
+  position: absolute;
+  z-index: -8;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 8px solid var(--primary-color);
+  margin-top: 26%;
+  margin-left: 23%;
+}
+
+/* SECTION PROYECTOS */
+#proyectos{
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+  margin-top: 10vh;
+}
+#proyectos-container{
+  margin-top: 10%;
+  width: 80%;
+}
+#proyectos-container>.row:nth-child(2){
+  padding: 5% 0px;
+}
+#proyectos-container>.row:nth-child(3){
+  margin-bottom: 10%;
+  justify-content: flex-end;
+}
+/* #proyectos-container>.row:nth-child(5)>.col-5{
+  border: 2 px solid red;
+} */
+.little-circle-orange{
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+.little-circle-orange-stroke{
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+
+/* QUERYS */
+/* 1024PX < 1279PX */
+@media(min-width:1024px) and (max-width:1279px){
+#inicio-container h2{
+  font-size: 4rem;
+}
+#inicio-container>.row>div:last-child{
+  padding-top: 20%;
+}
+#portfolio-word{
+  margin-left: -55px;
+}
+.circle-solid-bot{
+  width: 100px;
+  height: 100px;
+  margin-top: 20%;
+  margin-left: 16%;
+}
+.circle-solid-top{
+  width: 100px;
+  height: 100px;
+  margin-left: -1%;
+  margin-top: -2%;
+}
+.circle-stroke-top{
+  width: 100px;
+  height: 100px;
+  margin-left: -2%;
+}
+.circle-stroke-bot{
+  width: 100px;
+  height: 100px;
+  margin-top: 22%;
+  margin-left: 22%;
+}
+#sobre-mi-container h3{
+  font-size: 3rem;
+}
+#sobre-mi-container p{
+  font-size: 1.1rem;
+}
+}
+/* 1280PX < 1365PX */
+@media (min-width:1280px) and (max-width:1365px){
+#inicio-container>.row>div:last-child{
+  padding-top: 20%;
+}
+#sobre-mi-container h3{
+  font-size: 3rem;
+}
+.circle-solid-bot{
+  width: 120px;
+  height: 120px;
+  margin-left: 18%;
+  margin-top: 21%;
+}
+.circle-solid-top{
+  width: 120px;
+  height: 120px;
+  margin-left: -1%;
+  margin-top: -3%;
+}
+.circle-stroke-top{
+  width: 120px;
+  height: 120px;
+  margin-top: 4%;
+  margin-left: -2%;
+}
+.circle-stroke-bot{
+  width: 120px;
+  height: 120px;
+  margin-top: 22%;
+  margin-left: 23%;
+}
+.text-container{
+  font-size: 1.3rem;
+}
+/* SECTION INICIO */
+#inicio-container>.row>div:last-child{
+  padding-top: 15%;
+}
+h2{
+  font-size: 5.5rem;
+}
+#portfolio-word{
+  margin-left: -75px;
+}
+}
+
+
+/* 1366PX < 1919PX */
+@media (min-width:1366px) and (max-width:1919px){
+#inicio-container h2{
+  font-size: 5rem;
+}
+#portfolio-word{
+  margin-left: -65px;
+}
+.circle-solid-bot{
+  width: 110px;
+  height: 110px;
+  margin-left: 16%;
+  margin-top: 16%;
+}
+.circle-solid-top{
+  width: 110px;
+  height: 110px;
+  margin-left: 2.5%;
+  margin-top: -2%;
+}
+.circle-stroke-top{
+  width: 110px;
+  height: 110px;
+  margin-left: 1.5%;
+  margin-top: 4%;
+}
+.circle-stroke-bot{
+  width: 110px;
+  height: 110px;
+  margin-left: 21%;
+  margin-top: 17%;
+}
+.text-container{
+  font-size: 1.5rem;
+}
+#perfil-img{
+  width: 70%;
+}
+}
+
+
+/* 1920PX> */
+@media (min-width:1920px){
+  h2{
+    font-size: 7rem;
+  }
+  #portfolio-word{
+    margin-left: -90px;
+  }
+  #inicio-container>.row>div:last-child{
+    padding-top: 10%;
+  }
+  .circle-solid-bot{
+    width: 130px;
+    height: 130px;
+    margin-left: 18%;
+    margin-top: 17%;
+  }
+  .circle-solid-top{
+    width: 130px;
+    height: 130px;
+    margin-left: 3%;
+    margin-top: -2%;
+  }
+  .circle-stroke-top{
+    width: 130px;
+    height: 130px;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+  .circle-stroke-bot{
+    width: 130px;
+    height: 130px;
+    margin-left: 22%;
+    margin-top: 18%;
+  }
+  #perfil-img{
+    max-width: 70%;
+  }
+}
